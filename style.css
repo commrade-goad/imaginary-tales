@@ -1,0 +1,39 @@
+*,
+html {
+    margin:0;
+    padding:0;
+}
+
+.navigation {
+    background-color:rgb(51, 47, 47);
+    width:98,5%;
+    height:9vh;
+    padding:7px;
+}
+
+.ul-navigation {
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nama {
+    margin-right: 325px;
+    display: flex;
+    color:white
+}
+
+.li-navigation {
+    margin:10px;
+    margin-top: 18px;
+    font-size:20px;
+    align-items: center;
+    text-align: center;
+    color:white
+}
+
+.link-navigation {
+    text-decoration: none;
+    color:white;
+}
