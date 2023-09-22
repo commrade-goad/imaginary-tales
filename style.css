@@ -2,17 +2,17 @@
 html {
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigation {
-    background-color:rgb(51, 47, 47);
-    width:98,5%;
-    height:9vh;
-    padding:7px;
+    background-color: #1e1e2e;
+    background-image: linear-gradient(to right, #313244, #1e1e2e);
+    padding: 10px;
 }
 
 .ul-navigation {
-    display:flex;
+    display: flex;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
@@ -21,21 +21,21 @@ html {
 
 .left {
     display: flex;
-    color:white;
+    color: #b4befe;
     align-items: center;
 }
 
 .li-navigation {
-    margin:10px;
+    margin: 10px;
     margin-top: 18px;
-    font-size:20px;
+    font-size: 20px;
     align-items: center;
     text-align: center;
-    color:white;
+    color: #a6adc8;
     display: inline;
 }
 
 .link-navigation {
     text-decoration: none;
-    color:white;
+    color: #a6adc8;
 }
