@@ -39,3 +39,12 @@ html {
         text-decoration: none;
         color: #a6adc8;
     }
+
+    a {
+        color: #b4befe;
+        text-decoration: none;
+    }
+    
+    a.selected {
+        font-weight: bold;
+    }
