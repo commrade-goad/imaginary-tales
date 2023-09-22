@@ -14,14 +14,15 @@ html {
 .ul-navigation {
     display:flex;
     list-style-type: none;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
-.nama {
-    margin-right: 325px;
+.left {
     display: flex;
-    color:white
+    color:white;
+    align-items: center;
 }
 
 .li-navigation {
@@ -30,7 +31,8 @@ html {
     font-size:20px;
     align-items: center;
     text-align: center;
-    color:white
+    color:white;
+    display: inline;
 }
 
 .link-navigation {
