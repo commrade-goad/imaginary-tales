@@ -1,3 +1,4 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 *,
 html {
     margin:0;
@@ -45,7 +46,7 @@ html {
     }
 
     .li-navigation {
-        margin: 10px;
+        margin: 5px;
         margin-top: 18px;
         font-size: 20px;
         align-items: center;
