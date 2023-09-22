@@ -3,39 +3,39 @@ html {
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
-}
+    }
 
-.navigation {
-    background-color: #1e1e2e;
-    background-image: linear-gradient(to right, #313244, #1e1e2e);
-    padding: 10px;
-}
+    .navigation {
+        background-color: #1e1e2e;
+        background-image: linear-gradient(to right, #313244, #1e1e2e);
+        padding: 10px;
+    }
 
-.ul-navigation {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+    .ul-navigation {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
 
-.left {
-    display: flex;
-    color: #b4befe;
-    align-items: center;
-}
+    .left {
+        display: flex;
+        color: #b4befe;
+        align-items: center;
+    }
 
-.li-navigation {
-    margin: 10px;
-    margin-top: 18px;
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    color: #a6adc8;
-    display: inline;
-}
+    .li-navigation {
+        margin: 10px;
+        margin-top: 18px;
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+        color: #a6adc8;
+        display: inline;
+    }
 
-.link-navigation {
-    text-decoration: none;
-    color: #a6adc8;
-}
+    .link-navigation {
+        text-decoration: none;
+        color: #a6adc8;
+    }
