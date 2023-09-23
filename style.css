@@ -79,3 +79,33 @@ html {
         color: #a6adc8;
         transition: box-shadow 0.4s ease-in-out;
 }
+    #reader {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    #file-input {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .center {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-button {
+        background-color: #b4befe;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        color: #1e1e2e;
+        margin: 2px;
+    }
+
+    .button-center {
+        display: inline;
+    }
