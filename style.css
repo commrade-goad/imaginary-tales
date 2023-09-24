@@ -1,111 +1,111 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 *,
 html {
-    margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(45deg, #45475a, #585b70);
-    }
-
-    footer{
-        margin-top: auto;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        background-image: linear-gradient(to left, #313244, #1e1e2e);
-        color: #cdd6f4;
-        padding: 10px;
-        border-top: 2px solid #313244;
-    }
-
-    .navigation {
-        background-color: #1e1e2e;
-        background-image: linear-gradient(to right, #313244, #1e1e2e);
-        padding: 10px;
-        border-bottom: 2px solid #313244;
-    }
-
-    .ul-navigation {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .left {
-        display: flex;
-        color: #b4befe;
-        align-items: center;
-    }
-
-    .li-navigation {
-        margin: 5px;
-        margin-top: 18px;
-        font-size: 20px;
-        align-items: center;
-        text-align: center;
-        color: #a6adc8;
-        display: inline;
-    }
-
-    .link-navigation {
-        text-decoration: none;
-        color: #a6adc8;
-    }
-
-    a {
-        color: #cdd6f4;
-        text-decoration: none;
-        box-shadow: inset 0 -2px transparent;
-        padding: 3px;
-        transition: color 0.3s ease-in-out;
-    }
-    
-    a.selected {
-        color: #b4befe;
-        box-shadow: inset 0 -2px #b4befe;
-        font-weight: bold;
-    }
-
-    a:hover {
-        box-shadow: inset 0 -2px #a6adc8;
-        color: #a6adc8;
-        transition: box-shadow 0.4s ease-in-out;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-    #reader {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
 
-    #file-input {
-        padding: 10px;
-        color: white;
-        text-decoration: none;
-    }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, #45475a, #585b70);
+}
 
-    .center {
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
+footer {
+  margin-top: auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-image: linear-gradient(to left, #313244, #1e1e2e);
+  color: #cdd6f4;
+  padding: 10px;
+  border-top: 2px solid #313244;
+}
 
-    .page-button {
-        background-color: #b4befe;
-        padding: 10px;
-        border: none;
-        border-radius: 3px;
-        color: #1e1e2e;
-        margin: 2px;
-    }
+.navigation {
+  background-color: #1e1e2e;
+  background-image: linear-gradient(to right, #313244, #1e1e2e);
+  padding: 10px;
+  border-bottom: 2px solid #313244;
+}
 
-    .button-center {
-        display: inline;
-    }
+.ul-navigation {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left {
+  display: flex;
+  color: #b4befe;
+  align-items: center;
+}
+
+.li-navigation {
+  margin: 5px;
+  margin-top: 18px;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: #a6adc8;
+  display: inline;
+}
+
+.link-navigation {
+  text-decoration: none;
+  color: #a6adc8;
+}
+
+a {
+  color: #cdd6f4;
+  text-decoration: none;
+  box-shadow: inset 0 -2px transparent;
+  padding: 3px;
+  transition: color 0.3s ease-in-out;
+}
+
+a.selected {
+  color: #b4befe;
+  box-shadow: inset 0 -2px #b4befe;
+  font-weight: bold;
+}
+
+a:hover {
+  box-shadow: inset 0 -2px #a6adc8;
+  color: #a6adc8;
+  transition: box-shadow 0.4s ease-in-out;
+}
+#reader {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#file-input {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.center {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-button {
+  background-color: #b4befe;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #1e1e2e;
+  margin: 2px;
+}
+
+.button-center {
+  display: inline;
+}
