@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,40 @@
     <link rel="stylesheet" href="style.css" />
 
 </head>
-    <body>
-    
-        <!-- BATAS BAGIAN ATAS -->
 
-        <div class="navigation">
-            <ul class="ul-navigation">
-                <div class="left">
-                    <!-- <h1 class="nama">Imaginary Tales</h1> -->
-                               <a href="index.html"><img src="logo-white.svg" title="Imaginary Tales" height="80" /></a>
-                <div class="right">
-                    <li class="li-navigation">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="li-navigation">
-                        <a href="list.html">Novel</a>
-                    </li>
-                    <li class="li-navigation">
-                        <a href="info.html" class="selected">Informasi</a>
-                    </li>
-                </div>
-            </ul>
-        </div> 
+<body>
 
-        <!-- BATAS BAGIAN ATAS -->
+    <!-- BATAS BAGIAN ATAS -->
 
-        <!-- BATAS BAGIAN TENGAH -->
-<div class="center">
+    <div class="navigation">
+        <ul class="ul-navigation">
+            <div class="left">
+                <!-- <h1 class="nama">Imaginary Tales</h1> -->
+                <a href="index.html"><img src="logo-white.svg" title="Imaginary Tales" height="80" /></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-box" />
+                <button id="search-button"><i class="nf nf-fa-search"></i></button>
+            </div>
+
+            <div class="right">
+                <li class="li-navigation">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="li-navigation">
+                    <a href="list.html">Novel</a>
+                </li>
+                <li class="li-navigation">
+                    <a href="info.html" class="selected">Informasi</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <!-- BATAS BAGIAN ATAS -->
+
+    <!-- BATAS BAGIAN TENGAH -->
+    <div class="center">
         <input type="file" id="file-input">
         <div class="button-center">
             <button class="page-button" onclick="rendition.prev()">Prev</button>
@@ -41,59 +49,15 @@
         </div>
     </div>
     <div id="reader"></div>
-    <script src="script.js"></script>
-    <!-- note: add save position & load position button (json) -->
-    <!-- <script>
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-        var rendition;
-        document.getElementById('file-input').addEventListener('change', function (event) {
-            if (rendition != null) rendition.destroy();
-            var file = event.target.files[0];
-            var reader = new FileReader();
 
-            reader.onload = function (event) {
-                var bookData = event.target.result;
-                var book = ePub(bookData);
-                rendition = book.renderTo("reader", {method: "default", allowScriptedContent: true});
-                rendition.display();
+    <!-- BATAS BAGIAN TENGAH -->
 
-                sleep(500);
-                document.addEventListener('keypress', function (event) {
-                    if (event.key === 'ArrowLeft') {
-                        rendition.prev();
-                    } else if (event.key === 'ArrowRight') {
-                        rendition.next();
-                    }
-                });
-                book.loaded.navigation.then(function (toc) {
-                    console.log("Table of Contents:");
-                    toc.forEach(function (item) {
-                        console.log(item.label, item.href);
-                        if (item.subitems) {
-                            item.subitems.forEach(function (subitem) {
-                                console.log("  -", subitem.label, subitem.href);
-                            });
-                        }
-                    });
-                });
-            };
-            reader.readAsArrayBuffer(file);
-        });
+    <!-- BATAS BAGIAN BAWAH -->
 
-    </script> -->
-        <!-- BATAS BAGIAN TENGAH -->
+    <!-- BATAS BAGIAN BAWAH -->
+</body>
+<footer>
+    <p><i class="nf nf-md-github"></i> <a href="https://github.com/commrade-goad/imaginary-tales">Source Code</a></p>
+</footer>
 
-        <!-- BATAS BAGIAN BAWAH -->
-
-        <!-- BATAS BAGIAN BAWAH -->
-        
-        <script src="jszip.min.js"></script>
-    <script src="epub.min.js"></script>
-        
-    </body>
-    <footer>
-        <p><i class="nf nf-md-github"></i> <a href="https://github.com/commrade-goad/imaginary-tales">Source Code</a></p>
-    </footer>
 </html>
