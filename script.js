@@ -9,6 +9,7 @@ document.getElementById('file-input').addEventListener('change', function(event)
     var reader = new FileReader();
 
     reader.onload = function(event) {
+        // var bookData = "https://s3.amazonaws.com/epubjs/books/alice.epub";
         var bookData = event.target.result;
         var book = ePub(bookData);
         rendition = book.renderTo("reader", { method: "default", allowScriptedContent: true });
@@ -36,5 +37,3 @@ document.getElementById('file-input').addEventListener('change', function(event)
     };
     reader.readAsArrayBuffer(file);
 });
-
-
