@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imaginary Tales</title>
     <link rel="stylesheet" href="style.css" />
+
 </head>
     <body>
     
@@ -32,13 +33,65 @@
         <!-- BATAS BAGIAN ATAS -->
 
         <!-- BATAS BAGIAN TENGAH -->
+<div class="center">
+        <input type="file" id="file-input">
+        <div class="button-center">
+            <button class="page-button" onclick="rendition.prev()">Prev</button>
+            <button class="page-button" onclick="rendition.next()">Next</button>
+        </div>
+    </div>
+    <div id="reader"></div>
+    <script src="script.js"></script>
+    <!-- note: add save position & load position button (json) -->
+    <!-- <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        var rendition;
+        document.getElementById('file-input').addEventListener('change', function (event) {
+            if (rendition != null) rendition.destroy();
+            var file = event.target.files[0];
+            var reader = new FileReader();
 
+            reader.onload = function (event) {
+                var bookData = event.target.result;
+                var book = ePub(bookData);
+                rendition = book.renderTo("reader", {method: "default", allowScriptedContent: true});
+                rendition.display();
+
+                sleep(500);
+                document.addEventListener('keypress', function (event) {
+                    if (event.key === 'ArrowLeft') {
+                        rendition.prev();
+                    } else if (event.key === 'ArrowRight') {
+                        rendition.next();
+                    }
+                });
+                book.loaded.navigation.then(function (toc) {
+                    console.log("Table of Contents:");
+                    toc.forEach(function (item) {
+                        console.log(item.label, item.href);
+                        if (item.subitems) {
+                            item.subitems.forEach(function (subitem) {
+                                console.log("  -", subitem.label, subitem.href);
+                            });
+                        }
+                    });
+                });
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+    </script> -->
         <!-- BATAS BAGIAN TENGAH -->
 
         <!-- BATAS BAGIAN BAWAH -->
 
         <!-- BATAS BAGIAN BAWAH -->
-
+        
+        <script src="jszip.min.js"></script>
+    <script src="epub.min.js"></script>
+        
     </body>
     <footer>
         <p><i class="nf nf-md-github"></i> <a href="https://github.com/commrade-goad/imaginary-tales">Source Code</a></p>
