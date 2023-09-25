@@ -45,7 +45,9 @@
         </div>
     </div>
     <div id="reader"></div>
-    <script>
+    <script src="script.js"></script>
+    <!-- note: add save position & load position button (json) -->
+    <!-- <script>
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
@@ -62,7 +64,7 @@
                 rendition.display();
 
                 sleep(500);
-                document.addEventListener('keydown', function (event) {
+                document.addEventListener('keypress', function (event) {
                     if (event.key === 'ArrowLeft') {
                         rendition.prev();
                     } else if (event.key === 'ArrowRight') {
@@ -84,7 +86,7 @@
             reader.readAsArrayBuffer(file);
         });
 
-    </script>
+    </script> -->
     <!-- BATAS BAGIAN TENGAH -->
 
     <!-- BATAS BAGIAN BAWAH -->
