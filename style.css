@@ -110,3 +110,10 @@ a:hover {
 .button-center {
   display: inline;
 }
+.search-bar {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: inline;
+  flex-direction: column;
+}
