@@ -21,6 +21,15 @@ function displayBook(bookData) {
     }
     var book = ePub(bookData);
     rendition = book.renderTo("reader", { width: 600, height: 600, allowScriptedContent: true });
+    book.rendition.themes.register("black",
+        {
+            "body": {
+                "color": "white",
+                "font-family": "Arial, Helvetica, sans-serif",
+                "font-size": "12pt",
+            }
+        });
+    rendition.themes.select("black");
     rendition.display();
 
     book.loaded.navigation.then(function(toc) {
