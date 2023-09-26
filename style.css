@@ -80,10 +80,6 @@ a:hover {
     transition: box-shadow 0.4s ease-in-out;
 }
 
-#reader {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
 #file-input {
     padding: 10px;
     color: white;
