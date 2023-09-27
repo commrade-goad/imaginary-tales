@@ -28,6 +28,10 @@ function displayBook(bookData) {
                 "color": "white",
                 "font-family": "Arial, Helvetica, sans-serif",
                 // "font-size": "12pt",
+            },
+            "a": {
+                "color": "white !important",
+                "text-decoration": "underline !important",
             }
         });
     rendition.themes.select("black");
