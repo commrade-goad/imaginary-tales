@@ -29,6 +29,7 @@ footer {
     background-image: linear-gradient(to right, #313244, #1e1e2e);
     padding: 10px;
     border-bottom: 2px solid #313244;
+    display: block;
 }
 
 .ul-navigation {

@@ -17,7 +17,8 @@ document.getElementById('file-input').addEventListener('change', function(event)
 
 function displayBook(bookData) {
     if (bookData == null) {
-        bookData = "https://s3.amazonaws.com/epubjs/books/alice.epub";
+        // bookData = "https://s3.amazonaws.com/epubjs/books/alice.epub";
+        bookData = "https://s3.amazonaws.com/moby-dick/";
     }
     var book = ePub(bookData);
     rendition = book.renderTo("reader", { width: 600, height: 600, allowScriptedContent: true });
@@ -26,7 +27,7 @@ function displayBook(bookData) {
             "body": {
                 "color": "white",
                 "font-family": "Arial, Helvetica, sans-serif",
-                "font-size": "12pt",
+                // "font-size": "12pt",
             }
         });
     rendition.themes.select("black");
