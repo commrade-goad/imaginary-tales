@@ -4,17 +4,18 @@ var newDivFooter = document.createElement('div');
 
 // Set the innerHTML of the new div to your HTML content
 newDivHeader.innerHTML = `
-    <div class="navigation">
-        <ul class="ul-navigation">
-            <div class="left">
-                <!-- <h1 class="nama">Imaginary Tales</h1> -->
-                <a href="index.html"><img src="logo-white.svg" title="Imaginary Tales" height="80" /></a>
-            </div>
-            <div class="search-bar">
-                <input type="text" id="search-box" placeholder="Search..."/>
-                <button id="search-button"><i class="nf nf-fa-search"></i></button>
-            </div>
-            <div class="right">
+<div class="navigation">
+    <ul class="ul-navigation">
+        <div class="left">
+            <!-- <h1 class="nama">Imaginary Tales</h1> -->
+            <a href="index.html"><img src="logo-white.svg" title="Imaginary Tales" height="80" /></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-box" placeholder="Search..."/>
+            <button id="search-button"><i class="nf nf-fa-search"></i></button>
+        </div>
+        <div class="right">
+            <nav>
                 <li class="li-navigation">
                     <a href="index.html">Home</a>
                 </li>
@@ -24,9 +25,10 @@ newDivHeader.innerHTML = `
                 <li class="li-navigation">
                     <a href="info.html">Informasi</a>
                 </li>
-            </div>
-        </ul>
-    </div>
+            </nav>
+        </div>
+    </ul>
+</div>
 `;
 
 newDivFooter.innerHTML = `
