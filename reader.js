@@ -2,7 +2,10 @@ var rendition;
 var bookData;
 var book;
 
-displayBook(bookData);
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+};
+
 document.getElementById('file-input').addEventListener('change', function(event) {
     if (rendition != null) rendition.destroy();
     var file = event.target.files[0];
@@ -37,7 +40,7 @@ function displayBook(bookData) {
     rendition.themes.select("black");
     rendition.display();
 
-    book.loaded.navigation.then(function(toc) {
+    /* book.loaded.navigation.then(function(toc) {
         console.log("Table of Contents:");
         toc.forEach(function(item) {
             console.log(item.label, item.href);
@@ -47,5 +50,28 @@ function displayBook(bookData) {
                 });
             }
         });
-    });
+    }); */
 }
+
+function checkScreenSize() {
+    const mediaQuery = window.matchMedia("(max-width: 922px)");
+    const currentWindowWidth = window.innerWidth - 20;
+    const currentWindowHeight = window.innerHeight - 240;
+    if (currentWindowWidth > 923) {
+        console.log("bigger than 923");
+        rendition.resize(currentWindowWidth, currentWindowHeight);
+    } else if (mediaQuery.matches) {
+        console.log("smaller than 922");
+        const windowHeight = window.innerHeight - 120;
+        const windowWidth = window.innerWidth - 15;
+        rendition.resize(windowWidth, windowHeight);
+    }
+}
+
+window.addEventListener("resize", function(event) {
+    sleep(1000);
+    checkScreenSize();
+});
+
+displayBook(bookData);
+checkScreenSize();
