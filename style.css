@@ -138,7 +138,9 @@ a:hover {
     word-wrap: break-word;
 }
 
-@media screen and (max width: 922px)
-.navigation {
-    width: 100%;
+@media screen and (max-width: 922px){
+    .navigation {
+        display: none;
+    }
+
 }
