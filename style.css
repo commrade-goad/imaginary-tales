@@ -23,20 +23,15 @@ footer {
     padding: 10px;
 }
 
-.navigation {
-    background-color: #1e1e2e;
-    background-image: linear-gradient(to right, #313244, #1e1e2e);
-    padding: 10px;
-    border-bottom: 2px solid #313244;
-    display: block;
-}
-
-.ul-navigation {
+header {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background-color: #1e1e2e;
+    background-image: linear-gradient(to right, #313244, #1e1e2e);
+    border-bottom: 2px solid #313244;
 }
 
 .left {
@@ -45,14 +40,17 @@ footer {
     align-items: center;
 }
 
-.li-navigation {
+header ul {
     margin: 5px;
-    margin-top: 18px;
     font-size: 20px;
     align-items: center;
     text-align: center;
     color: #a6adc8;
     display: inline;
+}
+
+header ul a {
+    padding: 5px;
 }
 
 .link-navigation {

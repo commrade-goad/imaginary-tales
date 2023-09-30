@@ -56,7 +56,7 @@ function displayBook(bookData) {
 function checkScreenSize() {
     const mediaQuery = window.matchMedia("(max-width: 922px)");
     const currentWindowWidth = window.innerWidth - 20;
-    const currentWindowHeight = window.innerHeight - 240;
+    const currentWindowHeight = window.innerHeight - 260;
     if (currentWindowWidth > 923) {
         console.log("bigger than 923");
         rendition.resize(currentWindowWidth, currentWindowHeight);
