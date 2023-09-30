@@ -51,6 +51,7 @@ header ul {
 
 header ul a {
     padding: 5px;
+    margin: 5px;
 }
 
 .link-navigation {
@@ -134,11 +135,78 @@ a:hover {
     height: 100%;
     width: auto;
     word-wrap: break-word;
+    z-index: 1;
 }
 
-@media screen and (max-width: 922px){
-    .navigation {
-        display: none;
+/* Button Menu */
+.menu-toggle {
+    display: none; /* Dibuat tidak terlihat saat full layar*/
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+/* Mengatur garis toggle menu */
+.menu-toggle span {
+    width: 26px;
+    display: block;
+    height: 3px;
+    background-color: #ffff;
+    border-radius: 3px;
+    transition: all;
+    transition-duration: 300ms
+}
+
+.menu-toggle span:nth-child(1) {
+    transform-origin: left;
+}
+
+.menu-toggle span:nth-child(3) {
+    transform-origin: left;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(0px, -1px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    transform: scaleX(1);
+    background-color: transparent;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(0px, 1px);
+}
+
+@media screen and (max-width: 822px){
+    .menu-toggle {
+        display: flex;
+        position: fixed;
+        height: 20px;
+        top: 1.5rem;
+        right: 1.5rem;
     }
 
+
+    /* Atur menjadi column */
+    nav ul {
+        display: none;
+        padding: 6rem 2rem;
+        position: fixed;
+        width: 50%;
+        top: 0;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #020617;
+        right: -500px;
+        transition: all;
+        transition-duration: 300ms;
+    }
+
+    nav ul.active {
+        right: 0;
+        display: flex;
+        z-index: 2;
+    }
 }

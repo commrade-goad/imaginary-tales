@@ -1,3 +1,9 @@
+function show() {
+    document.querySelector('.menu-toggle').classList.toggle('open');
+    document.querySelector('nav ul').classList.toggle('active');
+
+}
+
 var newDivHeader = document.createElement('div');
 var newDivFooter = document.createElement('div');
 
@@ -17,6 +23,12 @@ newDivHeader.innerHTML = `
                 <a href="list.html">Novel</a>
                 <a href="info.html">Informasi</a>
             </ul>
+
+            <div class="menu-toggle" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </div>
 </header>
