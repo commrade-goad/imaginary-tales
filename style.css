@@ -155,7 +155,8 @@ a:hover {
     background-color: #ffff;
     border-radius: 3px;
     transition: all;
-    transition-duration: 300ms
+    transition-duration: 300ms;
+    z-index: 3;
 }
 
 .menu-toggle span:nth-child(1) {
@@ -184,21 +185,25 @@ a:hover {
         display: flex;
         position: fixed;
         height: 20px;
-        top: 1.5rem;
+        top: 2.5rem;
         right: 1.5rem;
     }
 
+    .search-bar {
+        display: none;
+    }
 
     /* Atur menjadi column */
     nav ul {
-        display: none;
+        display: flex;
         padding: 6rem 2rem;
         position: fixed;
-        width: 50%;
+        width: 25%;
         top: 0;
         flex-direction: column;
-        min-height: 100vh;
-        background-color: #020617;
+        background-color: rgba(30, 30, 46, 0.9);
+        padding: 50px;
+        border-radius: 20px;
         right: -500px;
         transition: all;
         transition-duration: 300ms;
