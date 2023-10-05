@@ -180,6 +180,17 @@ a:hover {
     transform: rotate(-45deg) translate(0px, 1px);
 }
 
+.grid-inner {
+    padding: 80px;
+    margin: 15px;
+    background-color: white;
+}
+
+.grid-parents {
+    justify-content: space-between;
+    display: inline;
+}
+
 .judul-informasi{   
     text-align: center;
     font-size:20px;
@@ -211,7 +222,6 @@ a:hover {
 @media screen and (max-width: 822px){
     .menu-toggle {
         display: flex;
-        position: fixed;
         height: 20px;
         top: 2.5rem;
         right: 1.5rem;
@@ -231,6 +241,7 @@ a:hover {
         flex-direction: column;
         background-color: rgba(30, 30, 46, 0.9);
         padding: 50px;
+        padding-top: 60px;
         border-radius: 20px;
         right: -500px;
         transition: all;
