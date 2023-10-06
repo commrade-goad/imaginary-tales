@@ -1,22 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imaginary Tales</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Css Content -->
+    <style>
+      /* ===== Google Font Import - Poppins ===== */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        position: relative;
+        min-height: 100vh;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .container .search-box {
+        position: relative;
+        height: 42px;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      .search-box input {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: #323334;
+        padding: 0 15px 0 45px;
+        color: #fff;
+        border-radius: 6px;
+      }
+      .search-box i {
+        position: absolute;
+        z-index: 2;
+        color: #999;
+        top: 50%;
+        left: 15px;
+        font-size: 20px;
+        transform: translateY(-50%);
+      }
+      .container .images .image-box {
+        position: relative;
+        height: 300px;
+        width: 210px;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .images {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .images .image-box {
+        margin: 8px;
+      }
+      .images .image-box img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
+        transition: transform 0.2s linear;
+      }
+      .image-box:hover img {
+        transform: scale(1.05);
+      }
+      .image-box h6 {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <!-- BATAS BAGIAN ATAS -->
+    <div id="top-bar"></div>
 
     <!-- BATAS BAGIAN ATAS -->
-    <div id="top-bar">
+
+    <!-- Search Bar -->
+    <div class="container">
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- Content -->
+      <div class="images">
+        <div class="image-box" data-name="spiderman">
+          <a href="#"
+            ><img
+              src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2023/10/1696460616.jpg"
+              alt="16bit Sensation: Another Layer"
+            />
+            <h6>16bit Sensation: Another Layer</h6></a
+          >
+        </div>
+        <div class="image-box" data-name="joker">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2023/10/1696373731.jpg"
+            alt="Watashi no Oshi wa Akuyaku Reijou."
+          />
+          <h6>Watashi no Oshi wa Akuyaku Reijou.</h6>
+        </div>
+        <div class="image-box" data-name="ironman">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2023/10/1696434492.jpg"
+            alt="Kage no Jitsuryokusha ni Naritakute! 2nd Season"
+          />
+          <h6>Kage no Jitsuryokusha ni Naritakute! 2nd Season</h6>
+        </div>
+        <div class="image-box" data-name="passenger">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2023/09/1695761884.jpg"
+            alt="Seiken Gakuin no Makentsukai"
+          />
+          <h6>Seiken Gakuin no Makentsukai</h6>
+        </div>
+        <div class="image-box" data-name="space">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2023/04/1682378220.jpg"
+            alt="Ta Bu Dang Nuzhu Hen Duo Nian"
+          />
+          <h6>Ta Bu Dang Nuzhu Hen Duo Nian</h6>
+        </div>
+        <div class="image-box" data-name="spiderman">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2021/11/1637888268.jpg"
+            alt="Shinju no Nectar"
+          />
+          <h6>Shinju no Nectar</h6>
+        </div>
+        <div class="image-box" data-name="universe">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2022/10/241928.jpg"
+            alt="Hikawa-sensei wa Otaku Kareshi ga Hoshii."
+          />
+          <h6>Hikawa-sensei wa Otaku Kareshi ga Hoshii.</h6>
+        </div>
+        <div class="image-box" data-name="spiderman">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2022/01/1642418841.jpg"
+            alt="Youkoso Jitsuryoku Shijou Shugi no Kyoushi"
+          />
+          <h6>Youkoso Jitsuryoku Shijou Shugi no Kyoushi</h6>
+        </div>
+        <div class="image-box" data-name="holiday">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2022/11/1668202356.jpg"
+            alt="Shen Yin Wangzuo 2nd Season"
+          />
+          <h6>Shen Yin Wangzuo 2nd Season</h6>
+        </div>
+        <div class="image-box" data-name="ironman">
+          <img
+            src="https://i0.wp.com/www.mynimeku.com/wp-content/uploads/2023/07/1688237126.jpg"
+            alt="Jitsu wa Ore, Saikyou deshita?"
+          />
+          <h6>Jitsu wa Ore, Saikyou deshita?</h6>
+        </div>
+      </div>
     </div>
 
-
-    <!-- BATAS BAGIAN ATAS -->
-
     <!-- BATAS BAGIAN TENGAH -->
 
     <!-- BATAS BAGIAN TENGAH -->
@@ -24,10 +188,10 @@
     <!-- BATAS BAGIAN BAWAH -->
 
     <!-- BATAS BAGIAN BAWAH -->
-</body>
-<footer>
+  </body>
+  <footer>
     <div id="bottom-bar"></div>
     <script src="essential.js"></script>
-</footer>
-
+    <script src="scrippt.js"></script>
+  </footer>
 </html>
