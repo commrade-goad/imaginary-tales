@@ -208,10 +208,4 @@ a:hover {
     transition: all;
     transition-duration: 300ms;
   }
-
-  nav ul.active {
-    right: 0;
-    display: flex;
-    z-index: 2;
-  }
 }
