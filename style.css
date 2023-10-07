@@ -180,17 +180,6 @@ a:hover {
     transform: rotate(-45deg) translate(0px, 1px);
 }
 
-.grid-inner {
-    padding: 80px;
-    margin: 15px;
-    background-color: white;
-}
-
-.grid-parents {
-    justify-content: space-between;
-    display: inline;
-}
-
 .judul-informasi{   
     text-align: center;
     font-size:20px;
