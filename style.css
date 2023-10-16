@@ -1,217 +1,217 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 *,
 html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(45deg, #45475a, #585b70);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, #45475a, #585b70);
 }
 
 footer {
-    margin-top: auto;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-image: linear-gradient(to left, #313244, #1e1e2e);
-    color: #cdd6f4;
-    padding: 10px;
+  margin-top: auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-image: linear-gradient(to left, #313244, #1e1e2e);
+  color: #cdd6f4;
+  padding: 10px;
 }
 
 header {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #1e1e2e;
-    background-image: linear-gradient(to right, #313244, #1e1e2e);
-    border-bottom: 2px solid #313244;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1e1e2e;
+  background-image: linear-gradient(to right, #313244, #1e1e2e);
+  border-bottom: 2px solid #313244;
 }
 
 .left {
-    display: flex;
-    color: #b4befe;
-    align-items: center;
+  display: flex;
+  color: #b4befe;
+  align-items: center;
 }
 
 header ul {
-    margin: 5px;
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    color: #a6adc8;
-    display: inline;
+  margin: 5px;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: #a6adc8;
+  display: inline;
 }
 
 header ul a {
-    padding: 5px;
-    margin: 5px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .link-navigation {
-    text-decoration: none;
-    color: #a6adc8;
+  text-decoration: none;
+  color: #a6adc8;
 }
 
 a {
-    color: #cdd6f4;
-    text-decoration: none;
-    box-shadow: inset 0 -2px transparent;
-    padding: 3px;
-    transition: color 0.3s ease-in-out;
+  color: #cdd6f4;
+  text-decoration: none;
+  box-shadow: inset 0 -2px transparent;
+  padding: 3px;
+  transition: color 0.3s ease-in-out;
 }
 
 a.selected {
-    color: #b4befe;
-    box-shadow: inset 0 -2px #b4befe;
-    font-weight: bold;
+  color: #b4befe;
+  box-shadow: inset 0 -2px #b4befe;
+  font-weight: bold;
 }
 
 a:hover {
-    box-shadow: inset 0 -2px #a6adc8;
-    color: #a6adc8;
-    transition: box-shadow 0.4s ease-in-out;
+  box-shadow: inset 0 -2px #a6adc8;
+  color: #a6adc8;
+  transition: box-shadow 0.4s ease-in-out;
 }
 
 #file-input {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 
 .center {
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-button {
-    background-color: #b4befe;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    color: #1e1e2e;
-    margin: 2px;
+  background-color: #b4befe;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #1e1e2e;
+  margin: 2px;
 }
 
 .button-center {
-    display: inline;
+  display: inline;
 }
 .search-bar {
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    display: inline;
-    flex-direction: column;
-    width: 50%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: inline;
+  flex-direction: column;
+  width: 50%;
 }
 
 #search-box {
-    padding: 10px;
-    border: 2px solid #b4befe;
-    background-color: #1e1e2e;
-    width: 60%;
-    border-radius: 3px;
-    color: #a6adc8;
+  padding: 10px;
+  border: 2px solid #b4befe;
+  background-color: #1e1e2e;
+  width: 60%;
+  border-radius: 3px;
+  color: #a6adc8;
 }
 
 #search-button {
-    padding: 10px;
-    background-color: #b4befe;
-    border: 2px solid #b4befe;
-    border-radius: 3px;
-    color: #1e1e2e;
+  padding: 10px;
+  background-color: #b4befe;
+  border: 2px solid #b4befe;
+  border-radius: 3px;
+  color: #1e1e2e;
 }
 
 .reader {
-    height: 100%;
-    width: auto;
-    word-wrap: break-word;
-    z-index: 1;
+  height: 100%;
+  width: auto;
+  word-wrap: break-word;
+  z-index: 1;
 }
 
 /* Button Menu */
 .menu-toggle {
-    display: none; /* Dibuat tidak terlihat saat full layar*/
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    z-index: 99;
+  display: none; /* Dibuat tidak terlihat saat full layar*/
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  z-index: 99;
 }
 
 /* Mengatur garis toggle menu */
 .menu-toggle span {
-    width: 26px;
-    display: block;
-    height: 3px;
-    background-color: #ffff;
-    border-radius: 3px;
-    transition: all;
-    transition-duration: 300ms;
-    z-index: 3;
+  width: 26px;
+  display: block;
+  height: 3px;
+  background-color: #ffff;
+  border-radius: 3px;
+  transition: all;
+  transition-duration: 300ms;
+  z-index: 3;
 }
 
 .menu-toggle span:nth-child(1) {
-    transform-origin: left;
+  transform-origin: left;
 }
 
 .menu-toggle span:nth-child(3) {
-    transform-origin: left;
+  transform-origin: left;
 }
 
 .menu-toggle.open span:nth-child(1) {
-    transform: rotate(45deg) translate(0px, -1px);
+  transform: rotate(45deg) translate(0px, -1px);
 }
 
 .menu-toggle.open span:nth-child(2) {
-    transform: scaleX(1);
-    background-color: transparent;
+  transform: scaleX(1);
+  background-color: transparent;
 }
 
 .menu-toggle.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(0px, 1px);
+  transform: rotate(-45deg) translate(0px, 1px);
 }
 
-@media screen and (max-width: 822px){
-    .menu-toggle {
-        display: flex;
-        height: 20px;
-        top: 2.5rem;
-        right: 1.5rem;
-    }
+@media screen and (max-width: 822px) {
+  .menu-toggle {
+    display: flex;
+    height: 20px;
+    top: 2.5rem;
+    right: 1.5rem;
+  }
 
-    .search-bar {
-        display: none;
-    }
+  .search-bar {
+    display: inline;
+  }
 
-    /* Atur menjadi column */
-    nav ul {
-        display: flex;
-        padding: 6rem 2rem;
-        position: fixed;
-        width: 25%;
-        top: 0;
-        flex-direction: column;
-        background-color: rgba(30, 30, 46, 0.9);
-        padding: 50px;
-        padding-top: 60px;
-        border-radius: 20px;
-        right: -500px;
-        transition: all;
-        transition-duration: 300ms;
-    }
+  /* Atur menjadi column */
+  .nav-ul {
+    display: flex;
+    padding: 6rem 2rem;
+    position: fixed;
+    width: 25%;
+    top: 0;
+    flex-direction: column;
+    background-color: rgba(30, 30, 46, 0.9);
+    padding: 50px;
+    padding-top: 60px;
+    border-radius: 20px;
+    right: -500px;
+    transition: all;
+    transition-duration: 300ms;
+  }
 
-    nav ul.active {
-        right: 0;
-        display: flex;
-        z-index: 2;
-    }
+  .nav-ul.active {
+    right: 0;
+    display: flex;
+    z-index: 2;
+  }
 }

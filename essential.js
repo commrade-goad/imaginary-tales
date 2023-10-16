@@ -1,11 +1,10 @@
 function show() {
-    document.querySelector('.menu-toggle').classList.toggle('open');
-    document.querySelector('nav ul').classList.toggle('active');
-
+  document.querySelector(".menu-toggle").classList.toggle("open");
+  document.querySelector("nav ul").classList.toggle("active");
 }
 
-var newDivHeader = document.createElement('div');
-var newDivFooter = document.createElement('div');
+var newDivHeader = document.createElement("div");
+var newDivFooter = document.createElement("div");
 
 newDivHeader.innerHTML = `
 <header>
@@ -18,7 +17,7 @@ newDivHeader.innerHTML = `
     </div>
     <div class="right">
         <nav>
-            <ul>
+            <ul class="nav-ul">
                 <a href="index.html">Home</a>
                 <a href="list.html">Novel</a>
                 <a href="info.html">Informasi</a>
@@ -38,9 +37,8 @@ newDivFooter.innerHTML = `
 <p><i class="nf nf-md-github"></i> <a href="https://github.com/commrade-goad/imaginary-tales">Source Code</a></p>
 `;
 
-
-var containerElementHeader = document.getElementById('top-bar'); // Replace 'container' with the ID of the container element you want to use
-var containerElementFooter = document.getElementById('bottom-bar'); // Replace 'container' with the ID of the container element you want to use
+var containerElementHeader = document.getElementById("top-bar"); // Replace 'container' with the ID of the container element you want to use
+var containerElementFooter = document.getElementById("bottom-bar"); // Replace 'container' with the ID of the container element you want to use
 
 containerElementHeader.appendChild(newDivHeader);
 containerElementFooter.appendChild(newDivFooter);
