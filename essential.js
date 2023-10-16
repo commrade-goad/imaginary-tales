@@ -34,7 +34,7 @@ newDivHeader.innerHTML = `
 `;
 
 newDivFooter.innerHTML = `
-<p><i class="nf nf-md-github"></i> <a href="https://github.com/commrade-goad/imaginary-tales">Source Code</a></p>
+<div class="footer-p"><i class="nf nf-md-github"></i> <a href="https://github.com/commrade-goad/imaginary-tales">Source Code</a></div>
 `;
 
 var containerElementHeader = document.getElementById("top-bar"); // Replace 'container' with the ID of the container element you want to use

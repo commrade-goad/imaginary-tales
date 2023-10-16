@@ -2,7 +2,8 @@
   font-family: Arial;
   text-align: center;
   padding: 20px;
-  border: 2px solid red;
+  color: #cdd6f4;
+    background-image: radial-gradient(circle at center, rgba(69, 71, 90, 0.7), rgba(0,0,0,0));
 }
 
 .team {
