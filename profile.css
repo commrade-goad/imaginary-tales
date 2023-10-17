@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: #cdd6f4;
 }
 .ul-team .li-team {
   display: flex;
@@ -25,15 +26,16 @@
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
-  border-radius: 5px;
+  background-color: #45475a;
+  border: 2px solid #a6adc8;
+  border-radius: 12px;
 }
 
 .logo {
   display: inline-flex;
   height: 70px;
   width: 70px;
-  background-color: blanchedalmond;
+  background-color: #b4befe;
   border-radius: 35px;
   margin: 8px;
   line-height: 80px;
@@ -97,9 +99,13 @@ h3 {
   font-size: 17px;
   font-family: "Georgia";
 }
-p {
+.li-team p {
   font-family: "Aria sans";
   font-size: 14px;
   padding: 8px;
   font-weight: bold;
+}
+
+.li-team a {
+    box-shadow: none;
 }
