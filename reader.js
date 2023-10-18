@@ -3,7 +3,7 @@ var bookData;
 var book;
 
 const sleep = (milliseconds) => {
-  return new Promise(resolve => setTimeout(resolve, milliseconds));
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
 };
 
 document.getElementById('file-input').addEventListener('change', function(event) {
@@ -19,8 +19,13 @@ document.getElementById('file-input').addEventListener('change', function(event)
 });
 
 function displayBook(bookData) {
-    if (bookData == null) {
-        // bookData = "https://s3.amazonaws.com/epubjs/books/alice.epub";
+    const currentURL = window.location.href;
+    const url = new URL(currentURL);
+    const bookURL = url.searchParams.get('book');
+
+    if (bookURL) {
+        bookData = bookURL;
+    } else {
         bookData = "https://s3.amazonaws.com/moby-dick/";
     }
     var book = ePub(bookData);

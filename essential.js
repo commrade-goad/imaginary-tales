@@ -11,10 +11,10 @@ newDivHeader.innerHTML = `
     <div class="left">
         <a href="index.html"><img src="logo-white.svg" title="Imaginary Tales" height="80" /></a>
     </div>
-    <div class="search-bar">
-        <input type="text" id="search-box" placeholder="Search..."/>
-        <button id="search-button"><i class="nf nf-fa-search"></i></button>
-    </div>
+    <!-- <div class="search-bar"> -->
+    <!--     <input type="text" id="search-box" placeholder="Search..."/> -->
+    <!--     <button id="search-button"><i class="nf nf-fa-search"></i></button> -->
+    <!-- </div> -->
     <div class="right">
         <nav>
             <ul class="nav-ul">
