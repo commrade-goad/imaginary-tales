@@ -1,27 +1,30 @@
-const container = document.getElementById('content-grid');
+import { readJson } from "./Book.js";
 
-for (let i = 0; i < 10; i++){
-    let bookName = "Buku " + i;
-    const newDivGrid = document.createElement('li');
-    newDivGrid.classList.add('flexbox-li');
-    newDivGrid.innerHTML = `
-<a href="index.html?book=https://s3.amazonaws.com/moby-dick/">
+const container = document.getElementById('content-grid');
+readJson("data/book.json").then(bookData => {
+    const bookDataLen = bookData.length;
+    for (let i = 0; i < bookDataLen; i++) {
+        const currentBook = bookData[i];
+        const newDivGrid = document.createElement('li');
+        newDivGrid.classList.add('flexbox-li');
+        console.log(currentBook.image);
+        newDivGrid.innerHTML = `
+<a href="index.html?book=${currentBook.path}">
     <div class="image">
-        <img src="https://millercooper.com/wp-content/uploads/2021/07/file-3.jpg"
+        <img src="${currentBook.image}"
             alt="Image" class="imge" />
     </div>
     <div class="title">
-        ${bookName} 
+        ${currentBook.name} 
     </div>
     <div class="author">
-        Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+        ${currentBook.author}
     </div>
     <div class="genre">
-        <div class="genre-box">WIP</div>
-        <div class="genre-box">WIP</div>
-        <div class="genre-box">WIP</div>
+        ${currentBook.tag.map(tag => `<div class="genre-box">${tag}</div>`).join('')}
     </div>
 </a>
 `;
-    container.appendChild(newDivGrid);
-}
+        container.appendChild(newDivGrid);
+    }
+})
