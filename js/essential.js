@@ -9,7 +9,7 @@ var newDivFooter = document.createElement("div");
 newDivHeader.innerHTML = `
 <header>
     <div class="left">
-        <a href="index.html"><img src="logo-white.svg" title="Imaginary Tales" height="80" /></a>
+        <a href="index.html"><img src="img/logo-white.svg" title="Imaginary Tales" height="80" /></a>
     </div>
     <!-- <div class="search-bar"> -->
     <!--     <input type="text" id="search-box" placeholder="Search..."/> -->
