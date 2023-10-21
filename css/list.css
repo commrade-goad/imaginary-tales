@@ -18,8 +18,8 @@
   flex-direction: column;
   max-width: 300px;
   margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   background-color: #45475a;
   background-image: linear-gradient(120deg, #313244, #1e1e2e);
   box-shadow: none;
