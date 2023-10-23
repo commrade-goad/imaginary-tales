@@ -15,7 +15,7 @@ readJson("data/book.json").then(bookData => {
 </div>
 <div class="info">
     <div class="title">${currentBook.name}</div>
-    <div class="author">${currentBook.author}</div>
+    <div class="author"><i>${currentBook.author}</i></div>
     <br />
     <div class="synopsys">
         ${currentBook.synopsys}
@@ -23,6 +23,13 @@ readJson("data/book.json").then(bookData => {
     <br />
     <div class="genre">
         ${currentBook.tag.map(tag => `<div class="genre-box">${tag}</div>`).join('')}
+    </div>
+    <br />
+    <br />
+    <div class="read-button">
+        <a href="index.html?book=${currentBook.path}" class="read-link">
+            Read this book
+        </a>
     </div>
 </div>
 `
