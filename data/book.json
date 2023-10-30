@@ -1,18 +1,1 @@
-[
-    {
-        "name": "Moby-Dick",
-        "author": "Kapten Ahab, Ishmael, Queequeg, Moby Dick, Father Mapple, Starbuck, Stubb, Yosemite Sam, Kapten Boomer, Elijah",
-        "synopsys": "Moby-Dick; atau, Paus adalah novel tahun 1851 karya penulis Amerika Herman Melville. Buku tersebut adalah narasi pelaut Ismael tentang pencarian gila-gilaan Ahab, kapten kapal penangkap ikan paus Pequod, untuk membalas dendam terhadap Moby Dick, paus sperma putih raksasa yang menggigit kakinya pada pelayaran kapal sebelumnya.",
-        "path": "https://s3.amazonaws.com/moby-dick/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Moby-Dick_FE_title_page.jpg/640px-Moby-Dick_FE_title_page.jpg",
-        "tag": ["Novel Grafik", "Fiksi Kelautan", "Fiksi Psikologis", "Epik", "Fiksi Petualangan"]
-    },
-    {
-        "name": "Alice in Wonderland",
-        "author": "Lewis Carroll",
-        "synopsys": "Alice, sekarang berusia 19 tahun, mengikuti seekor kelinci bermantel biru ke negeri ajaib dari mimpinya di mana dia bertemu kembali dengan teman-temannya yang membuatnya menyadari takdirnya yang sebenarnya.",
-        "path": "https://s3.amazonaws.com/epubjs/books/alice.epub",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alice%27s_Adventures_in_Wonderland_cover_%281865%29.jpg/220px-Alice%27s_Adventures_in_Wonderland_cover_%281865%29.jpg",
-        "tag": ["Fantasi Portal", "Omongkosong Sastra"]
-    }
-]
+[{"name":"Moby-Dick","author":"Kapten Ahab, Ishmael, Queequeg, Moby Dick, Father Mapple, Starbuck, Stubb, Yosemite Sam, Kapten Boomer, Elijah","synopsys":"Moby-Dick; atau, Paus adalah novel tahun 1851 karya penulis Amerika Herman Melville. Buku tersebut adalah narasi pelaut Ismael tentang pencarian gila-gilaan Ahab, kapten kapal penangkap ikan paus Pequod, untuk membalas dendam terhadap Moby Dick, paus sperma putih raksasa yang menggigit kakinya pada pelayaran kapal sebelumnya.","path":"https://s3.amazonaws.com/moby-dick/","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Moby-Dick_FE_title_page.jpg/640px-Moby-Dick_FE_title_page.jpg","tag":["Novel Grafik","Fiksi Kelautan","Fiksi Psikologis","Epik","Fiksi Petualangan"]},{"name":"Alice in Wonderland","author":"Lewis Carroll","synopsys":"Alice, sekarang berusia 19 tahun, mengikuti seekor kelinci bermantel biru ke negeri ajaib dari mimpinya di mana dia bertemu kembali dengan teman-temannya yang membuatnya menyadari takdirnya yang sebenarnya.","path":"https://s3.amazonaws.com/epubjs/books/alice.epub","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alice%27s_Adventures_in_Wonderland_cover_%281865%29.jpg/220px-Alice%27s_Adventures_in_Wonderland_cover_%281865%29.jpg","tag":["Fantasi Portal","Omongkosong Sastra"]},{"name":"Dracula","author":"Bram Stoker","synopsys":"Count Dracula adalah seorang bangsawan mengundang Jonathan Harker untuk mengurus kepindahannya ke Inggris. Jonathan Harker-pun akhirnya dapat melarikan diri karena ternyata Count Dracula adalah vampir penghisap darah. Count Dracula-pun kemudian mulai mengancam tunangan Harker, Wilhemina Murray dan temannya Lucy Westerna. Lucy sendiri akhirnya menjadi vampire penghisap darah. Dr. John Seward, salah satu pengagum Lucy meminta pertolongan gurunya Profesor Abraham Van Helsing. Dengan bantuan mereka akhirnya Count Dracula dapat dibasmi.","path":"./data/book/dracula.epub","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Dracula1st.jpeg/300px-Dracula1st.jpeg","tag":["Horror Fiction","Gothic Fiction","Fantasy Fiction","Invasion literature","Fantasique"]}]
