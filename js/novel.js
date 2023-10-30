@@ -4,7 +4,6 @@ const url = new URL(currentURL);
 const bookURL = url.searchParams.get('book');
 const container = document.getElementById('content');
 
-console.log(bookURL);
 readJson("data/book.json").then(bookData => {
     const currentBook = bookData[bookURL];
     const bookDiv = document.createElement('div');
@@ -34,5 +33,4 @@ readJson("data/book.json").then(bookData => {
 </div>
 `
     container.appendChild(bookDiv);
-    console.log(currentBook);
 });
