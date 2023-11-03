@@ -34,7 +34,7 @@
   align-items: center;
   padding: 20px;
   flex-direction: column;
-    height: 100%;
+  height: 100%;
 }
 
 .image {
@@ -45,39 +45,39 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-    height: 320px;
+  height: 320px;
 }
 
 a .title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 10px;
 }
 
 a .author {
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 a .genre {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
 }
 
 a .genre .genre-box {
-    margin: 5px;
-    background-color: #b4befe;
-    color: #1e1e2e;
-    font-size: 16px;
-    padding: 7px;
-    font-weight: bold;
-    border-radius: 6px;
+  margin: 5px;
+  background-color: #b4befe;
+  color: #1e1e2e;
+  font-size: 16px;
+  padding: 7px;
+  font-weight: bold;
+  border-radius: 6px;
 }
 
 .flexbox-li:hover {
@@ -105,20 +105,20 @@ a h3 {
 }
 
 .center-content {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 #book-search {
-    padding: 10px;
-    margin: 10px;
-    width: 75%;
-    border: 2px solid #a6adc8;
-    border-radius: 6px;
-    background-color: #1e1e2e;
-    color: white;
-    font-size: 1em;
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  border: 2px solid #a6adc8;
+  border-radius: 6px;
+  background-color: #1e1e2e;
+  color: white;
+  font-size: 1em;
 }

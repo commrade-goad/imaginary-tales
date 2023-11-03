@@ -1,14 +1,14 @@
 import { readJson } from "./Book.js";
 const currentURL = window.location.href;
 const url = new URL(currentURL);
-const bookURL = url.searchParams.get('book');
-const container = document.getElementById('content');
+const bookURL = url.searchParams.get("book");
+const container = document.getElementById("content");
 
-readJson("data/book.json").then(bookData => {
-    const currentBook = bookData[bookURL];
-    const bookDiv = document.createElement('div');
-    bookDiv.classList.add('flexbox');
-    bookDiv.innerHTML = `
+readJson("data/book.json").then((bookData) => {
+  const currentBook = bookData[bookURL];
+  const bookDiv = document.createElement("div");
+  bookDiv.classList.add("flexbox");
+  bookDiv.innerHTML = `
 <div class="img">
     <img src="${currentBook.image}" />
 </div>
@@ -21,7 +21,9 @@ readJson("data/book.json").then(bookData => {
     </div>
     <br />
     <div class="genre">
-        ${currentBook.tag.map(tag => `<div class="genre-box">${tag}</div>`).join('')}
+        ${currentBook.tag
+          .map((tag) => `<div class="genre-box">${tag}</div>`)
+          .join("")}
     </div>
     <br />
     <br />
@@ -31,6 +33,6 @@ readJson("data/book.json").then(bookData => {
         </a>
     </div>
 </div>
-`
-    container.appendChild(bookDiv);
+`;
+  container.appendChild(bookDiv);
 });

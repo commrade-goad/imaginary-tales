@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imaginary Tales</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="lib/jszip.min.js"></script>
     <script src="lib/epub.min.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- BATAS BAGIAN ATAS -->
 
     <div id="top-bar"></div>
@@ -21,11 +19,11 @@
     <!-- BATAS BAGIAN TENGAH -->
 
     <div class="center">
-        <input type="file" id="file-input">
-        <div class="button-center">
-            <button class="page-button" onclick="rendition.prev()">Prev</button>
-            <button class="page-button" onclick="rendition.next()">Next</button>
-        </div>
+      <input type="file" id="file-input" />
+      <div class="button-center">
+        <button class="page-button" onclick="rendition.prev()">Prev</button>
+        <button class="page-button" onclick="rendition.next()">Next</button>
+      </div>
     </div>
     <div id="reader"></div>
     <script src="js/reader.js"></script>
@@ -36,11 +34,10 @@
     <!-- BATAS BAGIAN BAWAH -->
 
     <footer>
-        <div id="bottom-bar"></div>
-        <script src="js/essential.js"></script>
+      <div id="bottom-bar"></div>
+      <script src="js/essential.js"></script>
     </footer>
 
     <!-- BATAS BAGIAN BAWAH -->
-</body>
-
+  </body>
 </html>
