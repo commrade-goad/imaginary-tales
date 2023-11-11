@@ -8,7 +8,6 @@ readJson("data/book.json").then((bookData) => {
     const newDivGrid = document.createElement("li");
     newDivGrid.classList.add("flexbox-li");
     newDivGrid.innerHTML = `
-<!-- <a href="index.html?book=${currentBook.path}"> -->
 <a href="novel.html?book=${i}">
     <div class="image">
         <img src="${currentBook.image}"

@@ -98,6 +98,37 @@ a:hover {
   flex-direction: column;
 }
 
+.big {
+  font-size: 2em;
+}
+
+.title {
+  margin: 30px;
+  color: #b4befe;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 1.2em;
+  max-width: 700px;
+  color: #cdd6f4;
+}
+
+.desc a {
+  color: #b4befe;
+}
+
+.h2 {
+  font-size: 1.7em;
+}
+
+.home-link {
+    margin: 10px;
+    padding: 10px;
+    background-color: #1e1e2e;
+    border-radius: 12px;
+}
+
 .page-button {
   background-color: #b4befe;
   padding: 10px;

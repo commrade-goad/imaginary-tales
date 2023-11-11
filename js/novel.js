@@ -28,7 +28,7 @@ readJson("data/book.json").then((bookData) => {
     <br />
     <br />
     <div class="read-button">
-        <a href="index.html?book=${currentBook.path}" class="read-link">
+        <a href="reader.html?book=${currentBook.path}" class="read-link">
             Read this book
         </a>
     </div>
