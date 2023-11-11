@@ -115,3 +115,35 @@ h3 {
 .li-team a {
   box-shadow: none;
 }
+
+.thx-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.thx-box {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e2e;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #1e1e2e;
+}
+
+.thx-name {
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+.thx-desc {
+    font-size: 1.1em;
+    margin: 5px;
+    color: #a6adc8;
+}
+
+.thx-box img {
+    border-radius: 50%;
+    height: 100px;
+}
