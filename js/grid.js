@@ -17,7 +17,9 @@ readJson("data/book.json").then((bookData) => {
         ${currentBook.name} 
     </div>
     <div class="author">
+        <i>
         ${currentBook.author}
+        </i>
     </div>
     <div class="genre">
         ${currentBook.tag

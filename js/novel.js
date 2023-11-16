@@ -5,10 +5,10 @@ const bookURL = url.searchParams.get("book");
 const container = document.getElementById("content");
 
 readJson("data/book.json").then((bookData) => {
-  const currentBook = bookData[bookURL];
-  const bookDiv = document.createElement("div");
-  bookDiv.classList.add("flexbox");
-  bookDiv.innerHTML = `
+    const currentBook = bookData[bookURL];
+    const bookDiv = document.createElement("div");
+    bookDiv.classList.add("flexbox");
+    bookDiv.innerHTML = `
 <div class="img">
     <img src="${currentBook.image}" />
 </div>
@@ -19,11 +19,15 @@ readJson("data/book.json").then((bookData) => {
     <div class="synopsys">
         ${currentBook.synopsys}
     </div>
+    <br/>
+    <div id="rating">
+        <!-- <p>Rating : ${currentBook.rating}</p> -->
+    </div>
     <br />
     <div class="genre">
         ${currentBook.tag
-          .map((tag) => `<div class="genre-box">${tag}</div>`)
-          .join("")}
+        .map((tag) => `<div class="genre-box">${tag}</div>`)
+        .join("")}
     </div>
     <br />
     <br />
@@ -34,5 +38,18 @@ readJson("data/book.json").then((bookData) => {
     </div>
 </div>
 `;
-  container.appendChild(bookDiv);
+    container.appendChild(bookDiv);
+    const ratingContainer = document.getElementById("rating");
+    const p = document.createElement("span");
+    p.innerHTML = `Rating : `
+    ratingContainer.append(p);
+    for (let i = 0; i < currentBook.rating; i++) {
+        const ratingStar = document.createElement("span");
+        ratingStar.classList.add("besar");
+        ratingStar.innerHTML = `
+<!-- <i class="nf nf-fa-star"></i> -->
+★
+`;
+        ratingContainer.append(ratingStar);
+    }
 });

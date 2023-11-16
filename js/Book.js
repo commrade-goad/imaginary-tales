@@ -1,11 +1,12 @@
 class Book {
-  constructor(name, author, synopsys, path, image, tag) {
+  constructor(name, author, synopsys, path, image, tag, rating) {
     this.name = name;
     this.author = author;
     this.synopsys = synopsys;
     this.path = path;
     this.image = image;
     this.tag = tag;
+    this.rating = rating;
   }
 }
 
@@ -23,6 +24,7 @@ async function readJson(path) {
           bookData.path,
           bookData.image,
           bookData.tag,
+          bookData.rating,
         ),
     );
   } catch (error) {
