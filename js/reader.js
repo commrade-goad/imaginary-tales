@@ -6,20 +6,6 @@ const sleep = (milliseconds) => {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 };
 
-document
-  .getElementById("file-input")
-  .addEventListener("change", function (event) {
-    if (rendition != null) rendition.destroy();
-    var file = event.target.files[0];
-    var reader = new FileReader();
-
-    reader.onload = function (event) {
-      bookData = event.target.result;
-      displayBook(bookData);
-    };
-    reader.readAsArrayBuffer(file);
-  });
-
 function displayBook(bookData) {
   const currentURL = window.location.href;
   const url = new URL(currentURL);
